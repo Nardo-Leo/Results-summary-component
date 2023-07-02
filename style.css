@@ -1,0 +1,275 @@
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Hanken Grotesk', sans-serif;
+
+}
+
+#cards{
+  width: 600px;
+  height: 420px;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 255, 0.150);
+  margin: initial;  
+}
+
+
+#card-result{
+  display: flex;
+  flex-direction: column;
+  background-image: radial-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+  border-radius: 30px;
+  text-align: center;
+  align-items: center ;
+  height: 420px;
+  width: 300px;
+  padding: 30px;
+  z-index: 1;
+  position: absolute;
+  left: 0px;
+}
+
+#result{  
+  font-size: 18px;
+  color: hsl(241, 100%, 89%);
+}
+
+#performance{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin:20px;
+  background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
+}
+
+#score{
+  font-weight: 700p;
+  font-size: 3.5em;
+}
+
+#total{
+  font-weight: 500;
+  color: hsla(241, 100%, 89%, 0.600);
+}
+
+#classification{
+  font-weight: 500;
+  font-size: 1.5em;
+  color: hsl(0, 0%, 100%);
+  margin: 10px;
+}
+
+#resume{
+  color: hsl(241, 100%, 89%);
+  width: 95%;
+}
+
+
+#card-summary{
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 30px;
+  /*border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;*/
+  align-items: center ;
+  height: 420px;
+  width: 300px;
+  position: absolute;
+  right: 0px;
+}
+
+#summary{
+  font-size: 18px;
+  font-weight: 800;
+  height: 70px;
+  width: 270px; 
+  color: hsl(224, 30%, 27%);
+  width: 250px;
+  margin-top: 5px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#pointReaction{
+  display: flex;
+  height: 40px;
+  width: 250px;
+  font-weight: 500;
+  font-size: 1em;
+  background-color: hsla(0, 100%, 67%, 0.10);
+  color: hsl(0, 100%, 67%);
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#pointMemory{
+  display: flex;
+  height: 40px;
+  width: 250px;
+  font-weight: 500;
+  font-size: 1em;
+  background-color: hsl(39, 100%, 56%, 0.10);
+  color: hsl(39, 100%, 56%);
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#pointVerbal{
+  display: flex;
+  height: 40px;
+  width: 250px;
+  font-weight: 500;
+  font-size: 1em;
+  background-color: hsl(166, 100%, 37%, 0.10);
+  color: hsl(166, 100%, 37%);
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#pointVisual{
+  display: flex;
+  height: 40px;
+  width: 250px;
+  font-weight: 500;
+  font-size: 1em;
+  background-color: hsl(234, 85%, 45%, 0.10);
+  color: hsl(234, 85%, 45%);
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  
+}
+
+.division{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.division p{
+  font-weight: 700;
+  padding: 10px;
+}
+
+.pontuation{
+  display: flex;
+}
+
+.points{
+  font-weight: 700;
+  color: hsl(0, 0%, 0%);
+  margin-right: 10px;
+}
+
+.maxPoint{
+  font-weight: 700;
+  color: hsl(0, 0%, 0%, 0.5);
+}
+
+.continue{
+  padding: 10px;
+  width: 250px;
+  border-radius: 30px;
+  margin: 30px 0px 0px 0px;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+}
+
+.continue:hover{
+  background-color:hsl(241, 81%, 54%);
+  cursor: pointer;
+}
+
+footer{
+  position: fixed;
+  height: 2vh;
+  bottom: 0px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media(min-width:360px) and 
+(max-width:750px){
+
+  #cards{
+    width: 100vw;
+    height: 100vh;
+    /*background-color: hsl(0, 0%, 100%);*/
+    background-color: hsl(0, 0%, 100%);
+    display:block;
+    flex-direction: column;
+    border-radius: 0px;
+    margin: 0px;
+  }
+
+  #card-result{
+    padding: 20px;
+    width: 100vw;
+    height: 45vh;
+    position: static;
+    border-radius: 0px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  #performance{
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  #resume{
+    width: 80%;
+  }
+
+
+  #card-summary{
+    width: 100vw;
+    height: 52vh;
+    border-radius: 0px;
+    position: static;
+  }
+
+}
